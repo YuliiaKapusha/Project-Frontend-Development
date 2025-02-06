@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    align-items: center;
+    background-color: #d4e6be;
+}
+.heade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head input[type="submit"]{
+    background-color: rgb(155, 238, 132);
+    color: brown;
+    margin: 5px;
+}
+.head section {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+section span{
+    margin: 5px;
+}
+.main{
+    padding: 15px;
+    width: 100%;
+}
+.book-info{
+display: flex;
+justify-content: space-around;
+}
+.collections {
+    padding: 10px;
+    text-align: center;
+    width: 35%;
+}
+.informations {
+    padding: 10px;
+    width: 35%;
+}
+.price {
+    border: 5px solid brown;
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+}
+.price p {
+    margin: 10px 0;
+}
+.price button{
+    background-color: rgb(155, 238, 132);
+    border-radius: 20px;
+    color: brown;
+    width: 50%;
+    height: 50%;
+}
+.discription {
+    padding: 10px;
+    margin-top: 20px;
+}
+.desc{
+    display: none;
+}
+.discription button{
+    background-color: rgb(155, 238, 132);
+    color: brown;
+}
+.footer {
+    border-top: 3px solid brown;
+    text-align: center;
+    background-color: #d4e6be;
+    color: brown;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 480px), (max-width: 720px) {
+    /* Змінюємо стилі для екранів з максимальною шириною 480px */
+  
+    body {
+      font-size: 14px; /* Зменшуємо розмір шрифту для кращого читання на малих екранах */
+    }
+  
+    header {
+      flex-direction: column; /* Змінюємо напрямок flex контейнера на колонковий */
+      align-items: center; /* Центруємо елементи в заголовку */
+    }
+  
+    .head {
+      flex-direction: column; /* Розташування елементів у колонці */
+      margin-bottom: 10px; /* Додаємо відступ знизу */
+    }
+  
+    .head input[type="submit"], .head section {
+      width: 100%; /* Ширина кнопки і розділу на весь контейнер */
+      margin: 5px 0; /* Відступи для елементів */
+    }
+  
+    .price {
+      width: 100%; /* Ширина блоку з ціною на весь контейнер */
+    }
+  
+    .price button {
+      width: 100%; /* Ширина кнопки на весь контейнер */
+    }
+    
+    .book-info {
+      flex-direction: column; /* Змінюємо напрямок блоку з інформацією на колонковий */
+    }
+  
+    .collections, .informations {
+      width: 100%; /* Ширина блоків на весь контейнер */
+    }
+  
+    .footer {
+      font-size: 12px; /* Зменшуємо розмір шрифту у футері для малих екранів */
+    }
+    
+    .desc {
+      display: block; /* Показуємо опис, який раніше був прихований */
+      margin-top: 10px; /* Додаємо відступ зверху */
+    }
+  }
+  
+  

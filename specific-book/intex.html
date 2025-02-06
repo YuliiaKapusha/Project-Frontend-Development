@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css">
+  </head>
+  <body>
+    <header>
+      <div class="heade">
+        <h1>JS BAND STORE/YULIIA KARPOVA</h1>
+      </div>
+      <div class="head">
+        <img
+          src="./image/cart.svg"
+          alt="Корзина"
+          style="width: 50px; height: 50px"
+        />
+        <input type="submit" value="Sing-Out" />
+        <section>
+          <input
+            type="image"
+            src="./image/avatar.png"
+            alt="Username"
+            width="50"
+            height="50"
+          />
+          <span>Username</span>
+        </section>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="book-info">
+        <div class="collections">
+          <img src="./image/svg_animations.jpg" alt="book" />
+        </div>
+
+        <div class="informations">
+          <p><b>Book name</b>: SVG Animations</p>
+          <p><b>Book author</b>: Sarah Drasner</p>
+          <p><b>Book level</b>: Middle</p>
+          <p><b>Book tags</b>: css</p>
+          <p>
+            <b>ShortDescription</b>: SVG is extremely powerful, with its reduced
+            HTTP requests and crispness on any display.
+          </p>
+        </div>
+        <div class="price">
+          <p>Price, $ <span id="price">28.39</span></p>
+          <p>Count <input type="number" id="count" value="1" min="1" /></p>
+          <p>Total price: $ <span id="total-price">28.39</span></p>
+          <button id="add-to-cart">Add to cart</button>
+        </div>
+      </div>
+      <div class="discription">
+        <button id="show-description">Show Description</button>
+        <div class="desc">
+          <p>
+            <b>Description</b>: SVG is extremely powerful, with its reduced HTTP
+            requests and crispness on any display. It becomes increasingly more
+            interesting as you explore its capabilities for responsive animation
+            and performance boons. When you animate SVG, you must be aware of
+            normal image traits like composition, color, implementation, and
+            optimization. But when you animate, it increases the complexity of
+            each of these factors exponentially. This practical book takes a deep
+            dive into how you can to solve these problems with stability,
+            performance, and creativity in mind.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>Prometheus @ 2024</span>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
