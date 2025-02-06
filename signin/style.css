@@ -1,0 +1,89 @@
+/* 2. Пропишіть css стилі так, щоб сторінка виглядала максимально подібною до прототипу (зображення висотою - 160px та шириною - 160px, поле для вводу та кнопка шириною - 200px).
+3. Пропишіть css стилі так, щоб при ширині екрану "320px":
+3.1 Ширина кнопки та поля для вводу розтягувалася на весь екран з відступами по бокам рівними 8px.
+3.2 Розміри зображення збільшувалися: ширина і висота до 200px. */
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(229, 223, 213);
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+footer {
+    border-top: 3px solid brown;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+.anketa {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.avatar>img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+}
+.info{ 
+    margin-bottom: 10px;
+}
+.info input[type="email"], .info input[type="password"], .anketa div button{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.info input[type="email"] {
+    border: 3px solid rgb(135, 171, 234);
+    margin-bottom: 10px;
+    
+}
+.info input[type="password"] {
+    border: 3px solid rgb(135, 171, 234); 
+}
+.anketa div button{
+    border: 0;
+    font-weight: 500;
+    background: rgb(149, 194, 239);
+    letter-spacing: 2px;
+}
+@media (max-width: 320px) {
+    .info input[type="email"], 
+    .info input[type="password"], 
+    .anketa div button {
+        width: calc(100% - 16px); /* Ширина з відступами по 8px з кожного боку */
+        margin: 8px; /* Відступи по 8px з кожного боку */
+    }
+
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+}
